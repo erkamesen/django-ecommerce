@@ -3,3 +3,4 @@ django-extensions
 djangorestframework
 ipdb
 python-dotenv
+pytest-django
