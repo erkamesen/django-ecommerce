@@ -1,5 +1,6 @@
 from app.settings.base import *  # noqa
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
