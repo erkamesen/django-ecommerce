@@ -4,3 +4,4 @@ djangorestframework
 ipdb
 python-dotenv
 pytest-django
+django-mptt
