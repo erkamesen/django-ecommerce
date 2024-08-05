@@ -6,3 +6,6 @@ python-dotenv
 pytest-django
 django-mptt
 drf-spectacular
+coverage
+pytest-cov
+pytest-factoryboy

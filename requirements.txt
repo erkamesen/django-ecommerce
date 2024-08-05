@@ -12,6 +12,10 @@ attrs==24.1.0
     # via
     #   jsonschema
     #   referencing
+coverage[toml]==7.6.0
+    # via
+    #   -r ../requirements.in
+    #   pytest-cov
 decorator==5.1.1
     # via
     #   ipdb
@@ -37,8 +41,14 @@ drf-spectacular==0.27.2
     # via -r ../requirements.in
 executing==2.0.1
     # via stack-data
+factory-boy==3.3.0
+    # via pytest-factoryboy
+faker==26.1.0
+    # via factory-boy
 inflection==0.5.1
-    # via drf-spectacular
+    # via
+    #   drf-spectacular
+    #   pytest-factoryboy
 iniconfig==2.0.0
     # via pytest
 ipdb==0.13.13
@@ -54,7 +64,9 @@ jsonschema-specifications==2023.12.1
 matplotlib-inline==0.1.7
     # via ipython
 packaging==24.1
-    # via pytest
+    # via
+    #   pytest
+    #   pytest-factoryboy
 parso==0.8.4
     # via jedi
 pexpect==4.9.0
@@ -70,9 +82,18 @@ pure-eval==0.2.3
 pygments==2.18.0
     # via ipython
 pytest==8.3.2
-    # via pytest-django
+    # via
+    #   pytest-cov
+    #   pytest-django
+    #   pytest-factoryboy
+pytest-cov==5.0.0
+    # via -r ../requirements.in
 pytest-django==4.8.0
     # via -r ../requirements.in
+pytest-factoryboy==2.7.0
+    # via -r ../requirements.in
+python-dateutil==2.9.0.post0
+    # via faker
 python-dotenv==1.0.1
     # via -r ../requirements.in
 pyyaml==6.0.1
@@ -86,7 +107,9 @@ rpds-py==0.19.1
     #   jsonschema
     #   referencing
 six==1.16.0
-    # via asttokens
+    # via
+    #   asttokens
+    #   python-dateutil
 sqlparse==0.5.1
     # via django
 stack-data==0.6.3
@@ -95,6 +118,8 @@ traitlets==5.14.3
     # via
     #   ipython
     #   matplotlib-inline
+typing-extensions==4.12.2
+    # via pytest-factoryboy
 uritemplate==4.1.1
     # via drf-spectacular
 wcwidth==0.2.13

@@ -3,7 +3,9 @@ from rest_framework.routers import DefaultRouter
 from product import views
 router = DefaultRouter()
 
-router.register("category", views.CategoryListCreateView)
+router.register("category", views.CategoryView)
+router.register("brand", views.BrandView)
+router.register("product", views.ProductView)
 
 
 urlpatterns = [
